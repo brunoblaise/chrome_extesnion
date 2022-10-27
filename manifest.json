@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Blocker",
+  "description": "Do you find yourself wasting time on the internet? Blocker is a simple extension that allows you to block social media.",
+  "version": "0.1.1",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["Content.js"]
+    }
+  ],
+  "icons": {"48": "icon48.png", "128": "icon128.png"},
+  "browser_action": {
+    "default_popup": "Popup.html",
+    "default_title": "Blocker"
+  },
+  "permissions": [
+    "https://www.youtube.com/*",
+    "https://www.facebook.com/*",
+    "https://www.instagram.com/*",
+    "https://www.spotify.com/*",
+    "https://www.twitter.com/*",
+    "https://www.netflix.com/*"
+  ]
+}
